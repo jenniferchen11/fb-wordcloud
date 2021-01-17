@@ -50,7 +50,7 @@
   background-color: white;
 }
 
-.submit{
+.login-btn{
   font-size: 20px;
   font-family:'Courier New', Courier, monospace;
   height: 45px;
@@ -58,7 +58,7 @@
   color: white;
 }
 
-.submit:hover{
+.login-btn:hover{
   border-color:rgb(255, 179, 66);
 }
 

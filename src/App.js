@@ -1,25 +1,12 @@
 import logo from './logo.png';
 import './App.css';
 import './index.css';
-import TextInput from './components/TextInput';
+import Login from './components/Login';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 class App extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      entry: ''
-    };
-  }
-
   //Functions
-
-  handleChange(val){
-    let entry = this.state.entry;
-    entry = val;
-    this.setState({entry});
-  }
   handleSubmit(){
     alert('sending request to Facebook API ' + this.state.entry)
   }
@@ -36,13 +23,10 @@ class App extends React.Component {
             Using machine learning algorithms to determine your personality type!
           </p>
           <p className ='desc'>
-            Enter the link to your Facebook profile: 
+            Login Below: 
           </p>
           <div>
-            <TextInput 
-              handleChange = {(val) => this.handleChange(val)}
-              handleSubmit = {() => this.handleSubmit()}
-            />
+            <Login/>
           </div>
           <div className = 'results'>
             *Results will appear here*
