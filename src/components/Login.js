@@ -10,8 +10,9 @@ const options = {
 export default class LoginBtn extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showGen: true,
-    words: [] };
+    this.state = { showGen: false,
+    words: [],
+  length: 600 };
   }
   handleResponse = (data) => {
     console.log(data);
@@ -35,6 +36,9 @@ export default class LoginBtn extends React.Component {
         for (let i = 0; i < hashTags.length; i++) {
           this.state.words.push({text: hashTags[i].replace('#', ''), value: 10 + i})
         }
+        if(hashTags.length > 10) {
+          this.setState({length: 800});
+        }
         this.setState({showGen: true});
       });
   };
@@ -56,9 +60,10 @@ export default class LoginBtn extends React.Component {
           )}
         </Login>
         {this.state.showGen && (
-          <ReactWordcloud options={options} words={this.state.words} />
+          <div style={{ height: this.state.length, width: this.state.length }}><ReactWordcloud options={options} words={this.state.words} /></div>
         )}
-      </FacebookProvider>
+        
+        </FacebookProvider>
     );
   }
 }
