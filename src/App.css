@@ -18,7 +18,7 @@
   color: white;
 }
 .welcome{
-  font-size: 6vh;
+  font-size: 5vh;
   font-family:'Courier New', Courier, monospace;
 }
 .App-link {
@@ -27,6 +27,7 @@
 
 .desc{
   font-size: 3vh;
+  opacity: 90%;
   font-family:'Courier New', Courier, monospace;
 }
 
@@ -50,18 +51,20 @@
   background-color: white;
 }
 
-.submit{
+.login-btn{
   font-size: 20px;
   font-family:'Courier New', Courier, monospace;
   height: 45px;
-  background-color:rgb(255, 179, 66);
+  background-color:	#4267B2;
   color: white;
+  cursor: pointer;
 }
 
-.submit:hover{
-  border-color:rgb(255, 179, 66);
+.login-btn:hover{
+  background-color:#5070b1;
+  border-color:rgb(150, 150, 150);
 }
 
 .space{
-  height: 10px;
+  height: 15px;
 }
