@@ -26,10 +26,13 @@ export default class LoginBtn extends React.Component {
           onError={this.handleError}
         >
           {({ loading, handleClick, error, data }) => (
-            <span className="login-btn" onClick={handleClick}>
-              Login via Facebook
+            <div>
+              <button className="login-btn" onClick={handleClick}>
+                Login via Facebook
+              </button>
+              <div className="space"></div>
               {loading && <span>Loading...</span>}
-            </span>
+            </div>
           )}
         </Login>
       </FacebookProvider>
