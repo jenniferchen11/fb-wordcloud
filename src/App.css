@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.welcome{
+  font-size: 6vh;
+  font-family:'Courier New', Courier, monospace;
+}
+.App-link {
+  color: #61dafb;
+}
+
+.desc{
+  font-size: 3vh;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.facebook-http-link{
+  width: 800px;
+  padding: 10px;
+  box-sizing: border-box
+}
+
+.field {
+  width: 50%;
+  height: 56px;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgba(223, 223, 223, 0.753);
+  transition: 0.3s all;
+  font-size: 25px;
+  box-sizing: border-box
+}
+.field:hover {
+  background-color: white;
+}
+
+.submit{
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace;
+  height: 45px;
+  background-color:rgb(255, 179, 66);
+  color: white;
+}
+
+.submit:hover{
+  border-color:rgb(255, 179, 66);
+}
+
+.space{
+  height: 10px;
+}
