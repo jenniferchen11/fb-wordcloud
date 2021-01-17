@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "fb-wordcloud",
+			"path": "."
+		},
+		{
+			"name": "node_modules",
+			"path": "../../../../delete-later/node_modules"
+		}
+	],
+	"settings": {}
+}
