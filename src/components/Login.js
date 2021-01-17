@@ -1,32 +1,35 @@
 import React from "react";
+import { FacebookProvider, Login } from 'react-facebook';
 
-export default class Login extends React.Component {
-  getPosts() {
-    window.FB.api("/me/posts", function (response) {
-        console.log("API response", response);
-        var list = document.getElementById("userLikes");
-        for (var i = 0; i < response.data.length; i++) {
-          var li = document.createElement("li");
-          li.innerHTML = response.data[i].message;
-          list.appendChild(li);
-        }
-      });
+export default class LoginBtn extends React.Component {
+  handleResponse = (data) => {
+    console.log(data);
+    const {profile: {id}, tokenDetail: {accessToken} } = data;
+    alert(`${id} : ${accessToken}`);
   }
-  Login() {
-    window.FB.login(
-        function (response) {
-          console.log("FB.login response", response);
-          this.getPosts();
-        },
-        { scope: "user_posts" }
-      );
-      return false;
+ 
+  handleError = (error) => {
+    this.setState({ error });
   }
+ 
   render() {
     return (
-      <button id="login-btn" className="login-btn" onSubmit={this.Login()}>
-        Login
-      </button>
+      <FacebookProvider appId="171027351023044">
+        <Login
+          scope="email"
+          onCompleted={this.handleResponse}
+          onError={this.handleError}
+        >
+          {({ loading, handleClick, error, data }) => (
+            <span className="login-btn" onClick={handleClick}>
+              Login via Facebook
+              {loading && (
+                <span>Loading...</span>
+              )}
+            </span>
+          )}
+        </Login>
+      </FacebookProvider>
     );
   }
 }

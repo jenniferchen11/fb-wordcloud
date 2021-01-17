@@ -1,7 +1,7 @@
 import logo from './logo.png';
 import './App.css';
 import './index.css';
-import Login from './components/Login';
+import LoginBtn from './components/Login';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -26,7 +26,7 @@ class App extends React.Component {
             Login Below: 
           </p>
           <div>
-            <Login/>
+            <LoginBtn/>
           </div>
           <div className = 'results'>
             *Results will appear here*
