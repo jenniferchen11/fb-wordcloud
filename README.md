@@ -45,7 +45,11 @@ Contribute
 ----------
 
 - Source Code: github.com/jenniferchen11/fb-wordcloud
-### contributors ###
+
+### Contributors ###
+Jennifer Chen
+Yufeng Peng
+Maathavan Nithiyananthan
 
 
 Support
