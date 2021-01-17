@@ -25,13 +25,11 @@ export default class LoginBtn extends React.Component {
           onCompleted={this.handleResponse}
           onError={this.handleError}
         >
-          {({ loading, handleClick, error, data }) => (
+          {({ handleClick }) => (
             <div>
               <button className="login-btn" onClick={handleClick}>
                 Login via Facebook
               </button>
-              <div className="space"></div>
-              {loading && <span>Loading...</span>}
             </div>
           )}
         </Login>
