@@ -38,6 +38,7 @@ Installation
 
 ### installations requried ###
 wordcloud: pip install wordcloud
+
 matplotlib: pip install matplotlib
 
 
