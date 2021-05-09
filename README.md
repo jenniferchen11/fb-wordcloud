@@ -1,9 +1,9 @@
-FB.Classify
+FB.Wordcloud
 Version: 1.0
 Date updated: 17 January 2021
 ========
 
-This project for 2021 Hack the North uses FaceBook's API and machine learning to generate aesthetic word cloud based on user's Facebook posts.
+This project for 2021 Hack the North uses FaceBook's API and React.js to generate aesthetic word cloud based on user's Facebook posts.
 
 # FB.Wordcloud was Created with React 
 
