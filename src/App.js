@@ -18,7 +18,7 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <span className="welcome">Welcome to FB.GenerateCloud!</span>
           <span className="desc">
-          Using FaceBook API and machine learning algorithms, we will produce a personalized word cloud for you based on your FaceBook activity!
+          Using FaceBook API, we will produce a personalized word cloud for you based on your FaceBook activity!
           </span>
           <p className="space"></p>
           <div>
